@@ -47,7 +47,7 @@ registerForm.addEventListener("submit", async (e) => {
     }
 
     try {
-        const response = await fetch("http://https://examportal-backend-0zjj.onrender.com/register", {
+        const response = await fetch("https://examportal-backend-0zjj.onrender.com/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ full_name, email, password, course })
@@ -73,7 +73,7 @@ loginForm.addEventListener("submit", async (e) => {
     const password = document.getElementById("login-password").value;
 
     try {
-        const response = await fetch("http://https://examportal-backend-0zjj.onrender.com/login", {
+        const response = await fetch("https://examportal-backend-0zjj.onrender.com/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password })
@@ -95,3 +95,4 @@ loginForm.addEventListener("submit", async (e) => {
         showPopup("Server not responding");
     }
 });
+
