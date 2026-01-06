@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   studentInfo.innerText = `Name: ${student.full_name} | Email: ${student.email}`;
 
   // Fetch results
-  fetch(`http://https://examportal-backend-0zjj.onrender.com/get-results?email=${encodeURIComponent(student.email)}`)
+  fetch(`https://examportal-backend-0zjj.onrender.com/get-results?email=${encodeURIComponent(student.email)}`)
     .then(res => {
       if (!res.ok) throw new Error("Failed to fetch results");
       return res.json();
@@ -175,3 +175,4 @@ function renderChart(data) {
     }
   });
 }
+
