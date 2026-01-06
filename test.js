@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Fetch questions
   try {
     const res = await fetch(
-      `http://https://examportal-backend-0zjj.onrender.com/get-questions?course=${encodeURIComponent(course)}`
+      `https://examportal-backend-0zjj.onrender.com/get-questions?course=${encodeURIComponent(course)}`
     );
 
     questions = await res.json();
@@ -123,7 +123,7 @@ questions.forEach(q => {
 
     // ✅ SAVE RESULT TO DATABASE
     try {
-      const res = await fetch("http://https://examportal-backend-0zjj.onrender.com/save-result", {
+      const res = await fetch("https://examportal-backend-0zjj.onrender.com/save-result", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -150,3 +150,4 @@ questions.forEach(q => {
   };
 
 });
+
